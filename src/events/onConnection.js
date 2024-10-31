@@ -8,6 +8,6 @@ export const onConnection = (socket) => {
   socket.buffer = Buffer.alloc(0);
 
   socket.on('data', onData(socket));
-  socket.on('data', onEnd(socket));
-  socket.on('data', onError(socket));
+  socket.on('close', onEnd(socket));
+  socket.on('error', onError(socket));
 };

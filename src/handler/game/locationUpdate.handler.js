@@ -16,11 +16,7 @@ export const locationUpdateHandler = ({ socket, userId, payload }) => {
     }
 
     user.updatePosition(x, y);
-    console.log(user);
-    console.log(gameSession);
     const locationData = gameSession.getAllLocation(userId);
-    console.log(`after`, user);
-    console.log(`after`, gameSession);
 
     socket.write(locationData);
   } catch (e) {

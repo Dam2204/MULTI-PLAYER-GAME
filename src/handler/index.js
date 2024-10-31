@@ -1,6 +1,6 @@
 import { HANDLER_IDS } from '../constants/handlerIds.js';
-import { locationUpdateHandler } from './game/locationUpdate.handler.js';
-import initialHandler from './user/initial.handler.js';
+import { locationUpdateHandler } from './game/locationUpdateHandler.js';
+import initialHandler from './user/initialHandler.js';
 
 const handlers = {
   [HANDLER_IDS.INITIAL]: {

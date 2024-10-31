@@ -1,4 +1,4 @@
-import { createPingPacket } from '../../utils/notification/game.notification.js';
+import { createPingPacket } from '../../utils/notification/gameNotification.js';
 
 class User {
   constructor(socket, id, playerId, latency, coords) {

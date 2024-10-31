@@ -1,9 +1,9 @@
 import { HANDLER_IDS, RESPONSE_SUCCESS_CODE } from '../../constants/handlerIds.js';
-import { createUser, findUserByDeviceId, updateUserLogin } from '../../db/user/user.db.js';
-import { getGameSession } from '../../sessions/game.session.js';
-import { addUser } from '../../sessions/user.session.js';
+import { createUser, findUserByDeviceId, updateUserLogin } from '../../db/user/userDb.js';
+import { getGameSession } from '../../sessions/gameSession.js';
+import { addUser } from '../../sessions/userSession.js';
 import { createResponse } from '../../utils/response/createResponse.js';
-import User from '../../classes/models/user.class.js';
+import User from '../../classes/models/userClass.js';
 
 const initialHandler = async ({ socket, userId, payload }) => {
   try {

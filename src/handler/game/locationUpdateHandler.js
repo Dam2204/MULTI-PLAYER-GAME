@@ -1,4 +1,4 @@
-import { getGameSession } from '../../sessions/game.session.js';
+import { getGameSession } from '../../sessions/gameSession.js';
 
 export const locationUpdateHandler = ({ socket, userId, payload }) => {
   try {

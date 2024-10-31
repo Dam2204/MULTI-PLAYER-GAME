@@ -1,6 +1,6 @@
 import { toCamelCase } from '../../utils/transformCase.js';
 import dbPool from '../database.js';
-import { USER_QUERIES } from './user.queries.js';
+import { USER_QUERIES } from './userQueries.js';
 
 export const findUserByDeviceId = async (deviceId) => {
   try {

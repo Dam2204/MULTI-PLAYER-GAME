@@ -1,4 +1,4 @@
-import { addGameSession } from '../sessions/game.session.js';
+import { addGameSession } from '../sessions/gameSession.js';
 import { testConnection } from '../utils/db/testConnection.js';
 import { loadProtos } from './loadProto.js';
 import { v4 as uuidv4 } from 'uuid';

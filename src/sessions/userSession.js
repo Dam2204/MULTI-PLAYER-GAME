@@ -1,4 +1,4 @@
-import { updateUserLocation } from '../db/user/user.db.js';
+import { updateUserLocation } from '../db/user/userDb.js';
 import { userSessions } from './sessions.js';
 
 export const addUser = (user) => {

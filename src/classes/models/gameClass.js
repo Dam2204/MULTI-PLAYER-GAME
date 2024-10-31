@@ -1,4 +1,4 @@
-import { createLocationPacket } from '../../utils/notification/game.notification.js';
+import LatencyManager from '../managers/latencyManager.js';
 
 class Game {
   constructor(id) {

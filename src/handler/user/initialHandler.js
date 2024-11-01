@@ -30,7 +30,7 @@ const initialHandler = async ({ socket, userId, payload }) => {
     addUser(user);
     const gameSession = getGameSession();
     gameSession.addUser(user);
-    console.log(gameSession);
+    // console.log(gameSession);
 
     const initialResponse = createResponse(HANDLER_IDS.INITIAL, RESPONSE_SUCCESS_CODE, {
       userId: deviceId,

@@ -8,7 +8,7 @@ export const locationUpdateHandler = ({ socket, userId, payload }) => {
     if (!gameSession) {
       console.error('Game session not found');
     }
-    console.log(gameSession);
+    // console.log(gameSession);
 
     const user = gameSession.getUser(userId);
     if (!user) {
